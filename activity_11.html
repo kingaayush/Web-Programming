@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            height: 600px;
+            margin: 20px auto;
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .blue-bg {
+            background-color: #87CEEB;
+        }
+
+        .orange-text {
+            color: #FF8C00;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        .green-text {
+            color: #008000;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        .blue-text {
+            color: #0000FF;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .startup-img {
+            width: 100%;
+            height: auto;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="2">
+                    <img src="C:\Users\91882\Desktop\images\your-image-url.jpg" alt="Profile Image" class="profile-img">
+                </td>
+                <td class="blue-bg">r1c2</td>
+                <td colspan="2" class="blue-bg">r1c3</td>
+                <td class="orange-text">Stay Positive!</td>
+                <td rowspan="5">r1c6</td>
+            </tr>
+            <tr>
+                <td>r2c2</td>
+                <td colspan="2" class="green-text">
+                    <a href="mailto:your.email@example.com">Email Me</a>
+                </td>
+                <td class="orange-text">Believe in Yourself!</td>
+            </tr>
+            <tr>
+                <td class="blue-text">
+                    <a href="home.html">Go to Home</a>
+                </td>
+                <td>r3c2</td>
+                <td>r3c3</td>
+                <td>r3c4</td>
+                <td>
+                    <img src="C:\Users\91882\Desktop\images\billo_image.jpg" alt="Startup Image" class="startup-img">
+                </td>
+            </tr>
+            <tr>
+                <td class="blue-bg">r4c1</td>
+                <td class="blue-bg">r4c2</td>
+                <td colspan="2" class="orange-text">You Can Achieve Anything!</td>
+                <td>r4c6</td>
+            </tr>
+            <tr>
+                <td>r5c1</td>
+                <td>r5c2</td>
+                <td class="orange-text">Keep Learning!</td>
+                <td>r5c4</td>
+                <td class="orange-text">Be Grateful!</td>
+            </tr>
+            <tr>
+                <td colspan="5" class="orange-text">Embrace Challenges!</td>
+                <td>r5c6</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

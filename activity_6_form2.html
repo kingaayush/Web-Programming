@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>HTML5 Elements Form</title> 
+<style> 
+body { 
+font-family: Arial, sans-serif; 
+background-color: #f9f9f9; 
+color: #333; 
+margin: 20px; 
+} 
+ 
+.form-container { 
+background-color: #fff; 
+padding: 20px; 
+border-radius: 8px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+width: 400px; 
+margin: 20px auto; 
+} 
+h2 { 
+text-align: center; 
+color: #4a90e2; 
+} 
+ 
+label { 
+display: block; 
+margin: 10px 0 5px; 
+font-weight: bold; 
+} 
+input, 
+select, 
+textarea, 
+button { 
+width: 100%; 
+padding: 10px; 
+margin-bottom: 15px; 
+border: 1px solid #ccc; 
+border-radius: 5px; 
+} 
+button { 
+background-color: #4a90e2; 
+color: #fff; 
+font-weight: bold; 
+cursor: pointer; 
+} 
+button:hover { 
+background-color: #357ab8; 
+} 
+</style> 
+</head> 
+ 
+<body> 
+<div class="form-container"> 
+<h2>Complete HTML5 Form</h2> 
+<form action="#"> 
+<label for="textbox">Text Box</label> 
+<input type="text" id="textbox" name="textbox" 
+placeholder="Enter your text"> 
+<label>Radio Buttons</label> 
+<label><input type="radio" name="gender" value="male"> 
+Male</label> 
+<label><input type="radio" name="gender" value="female"> 
+Female</label> 
+<label>Check Boxes</label> 
+<label><input type="checkbox" name="interest" value="sports"> 
+Sports</label> 
+<label><input type="checkbox" name="interest" value="music"> 
+Music</label> 
+<label for="select">Selection Box</label> 
+<select id="select" name="select"> 
+<option value="option1">Option 1</option> 
+<option value="option2">Option 2</option> 
+<option value="option3">Option 3</option> 
+</select> 
+ 
+<label for="textarea">Text Area</label> 
+<textarea id="textarea" name="textarea" rows="4" 
+placeholder="Write here..."></textarea> 
+ 
+<label for="datalist">Datalist</label> 
+<input list="options" id="datalist" name="datalist"> 
+<datalist id="options"> 
+<option value="Option 1"> 
+<option value="Option 2"> 
+<option value="Option 3"> 
+</datalist> 
+<button type="submit">Submit</button> 
+</form> 
+</div> 
+</body> 
+</html>
